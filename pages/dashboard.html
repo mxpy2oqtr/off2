@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard - HealthTrack</title>
+  <link rel="stylesheet" href="../styles/main.css">
+  <link rel="stylesheet" href="../styles/components.css">
+  <link rel="stylesheet" href="../styles/layouts.css">
+  <link rel="stylesheet" href="../styles/dashboard.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <div id="app">
+    <!-- Header dinámico -->
+    <div id="header-container"></div>
+
+    <!-- Navegación dinámica -->
+    <div id="nav-container"></div>
+
+    <main class="main-content">
+      <div class="container">
+        <div class="page-header">
+          <h1>Dashboard</h1>
+          <p class="page-subtitle">Resumen de tu salud y bienestar</p>
+        </div>
+
+        <!-- Grid de métricas -->
+        <div class="metrics-grid">
+          <div class="metric-card" id="steps-card">
+            <!-- Cargado dinámicamente -->
+          </div>
+          <div class="metric-card" id="calories-card">
+            <!-- Cargado dinámicamente -->
+          </div>
+          <div class="metric-card" id="sleep-card">
+            <!-- Cargado dinámicamente -->
+          </div>
+          <div class="metric-card" id="water-card">
+            <!-- Cargado dinámicamente -->
+          </div>
+        </div>
+
+        <!-- Gráficos y actividad reciente -->
+        <div class="dashboard-content">
+          <div class="charts-section">
+            <div class="chart-container">
+              <canvas id="activityChart"></canvas>
+            </div>
+          </div>
+          <div class="recent-activity">
+            <h3>Actividad Reciente</h3>
+            <div id="recent-activities-list">
+              <!-- Cargado dinámicamente -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer dinámico -->
+    <div id="footer-container"></div>
+  </div>
+
+  <script type="module" src="../scripts/core/app.js"></script>
+</body>
+</html>
